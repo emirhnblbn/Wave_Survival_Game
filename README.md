@@ -4,7 +4,7 @@ Wave Survival Oyunu
 Teslim Tarihi: 23.10.2026 
 Ege Üniversitesi — Tire Kutsan Meslek Yüksekokulu — Bilgisayar Programcılığı Proje Dersi Raporu
 
-GitHub Repo URL: https://github.com/emirhnblbn/Dalga_Hayatta_Oyunu
+GitHub Repo URL:https://github.com/emirhnblbn/Wave_Survival_Game
 
 Öğrenci Bilgileri:
 60250000048 - Emirhan Balaban
