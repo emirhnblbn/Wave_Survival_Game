@@ -37,7 +37,6 @@ Aktör	Açıklama	Yetki Seviyesi
 Oyuncu	Oyunu başlatan, karakter seçen, oyunu oynayan tek insan aktör	Tüm oyun içi etkileşimleri (hareket, menü, duraklatma) yapabilir
 Sistem (Wave Manager)	İnsan olmayan aktör; düşman dalgalarını üretir ve zorluk seviyesini otomatik ayarlar	Oyuncu müdahalesi olmadan arka planda çalışır
 
-Not: Oyun tek kullanıcılı ve çevrimdışı olduğundan admin/misafir gibi ek roller bulunmamaktadır; tek insan aktör "Oyuncu"dur.
 
 3. Fonksiyonel Gereksinimler (Functional Requirements)
 Bir Oyuncu olarak, oyuna başlamadan önce farklı karakterler arasından seçim yapmak istiyorum, böylece oynanış tarzımı kendi tercihime göre belirleyebileyim.
