@@ -17,8 +17,8 @@ Amaç: Oyuncuya kısa seanslarda (10-20 dakika) oynanabilen, her oturumda farkl�
 
 Çözdüğü Problem:
 Bu oyun türünü seven ve bu oyun türünün diğer oyunlarını çoktan bitirmiş olan ve bu türde yeni bir oyun deneyimlemek isteyen kullanıcıların isteğini karşılar.
-Sistem ne yapacak:
 
+Sistem ne yapacak:
 Oyuncunun oyun başında birden fazla karakter arasından seçim yapmasına izin verecek.
 Düşmanları zamanla artan sayı ve güçte dalgalar halinde oyuncunun üzerine gönderecek.
 Oyuncu düşman yendikçe deneyim puanı ve ödüller (yetenek, ekipman vb.) kazandıracak.
@@ -50,15 +50,15 @@ Bir Oyuncu olarak, oyunu istediğim an duraklatıp devam ettirebilmek istiyorum,
 Bir Oyuncu olarak, karakterim öldüğünde bir "Oyun Bitti" ekranı görüp oyunu yeniden başlatabilmek istiyorum, böylece tekrar deneyebileyim.
 Bir Oyuncu olarak, ilerleyen dalgalarda düşman sayısının ve gücünün artmasını istiyorum, böylece oyun giderek zorlaşsın ve meydan okuma hissi sürsün.
 
-5. Fonksiyonel Olmayan Gereksinimler (Non-Functional Requirements)
+4. Fonksiyonel Olmayan Gereksinimler (Non-Functional Requirements)
 Performans: Aynı anda ekranda onlarca/yüzlerce düşman olabileceğinden, obje havuzlama (object pooling) kullanılarak stabil bir kare hızı (ör. 60 FPS) hedeflenmelidir.
 Kullanılabilirlik: Kontroller basit ve sezgisel olmalı (ör. WASD/yön tuşları ile hareket, saldırı otomatik).
 Taşınabilirlik: Unity motoru sayesinde en azından Windows masaüstü için build alınabilmeli; mümkünse WebGL build'i de hedeflenebilir.
 Ölçeklenebilirlik: Yeni karakter, düşman ve yetenek eklemek kolay olmalı; karakter/düşman verileri kod içine gömülmek yerine Unity ScriptableObject gibi veri yapılarıyla tutulmalıdır.
 Güvenilirlik: Oyun, tek bir oturumda (20+ dakika) çökme yaşamadan çalışabilmelidir.
 
-7. Harici Arayüz Gereksinimleri (External Interfaces)
-Oyuncunun ulaştığı en yüksek seviye ve o seviyede oynadığı karakter, oyunun çalıştığı bilgisayarda yerel bir veritabanı dosyasında saklanır.
+5. Harici Arayüz Gereksinimleri (External Interfaces)
+Oyuncunun ulaştığı en yüksek seviye ve o seviyede oynadığı karakter, oyunun çalıştığı bilgisayarda yerel bir veritabanı dosyasında saklanır. Oyun herhangi bir üçüncü taraf API veya harici servisle haberleşmez.
 
 B. Dizayn Raporu
 1. Kullanım Senaryoları (Use-Case Scenarios)
@@ -92,8 +92,6 @@ Ana Akış: Sistem "Oyun Bitti" ekranını gösterir, ulaşılan dalga/süre/sko
 2. UML Sınıf Diyagramı
 
 
-
-
 3. UI/UX Tasarımları
 Ana Menü: Oyun logosu, "Oyuna Başla", "Ayarlar", "Çıkış" butonları.
 Karakter Seçim Ekranı: Yatayda kaydırılabilir karakter kartları (portre, isim, kısa yetenek açıklaması), seçili karakteri onaylayan "Başla" butonu.
@@ -110,3 +108,4 @@ Veri Yönetimi	Unity ScriptableObject	Karakter/düşman/yetenek verilerini kodda
 Sürüm Kontrolü	Git + GitHub	Grup içi iş bölümü, commit geçmişiyle bireysel katkının izlenebilmesi
 UI	Unity UGUI (veya UI Toolkit)	Unity ile doğrudan entegre, HUD ve menüler için yeterli
 Görsel Tasarım	2D sprite / pixel art	Tür için uygun, düşük performans maliyeti
+Veri Saklama SQLite (yerel .db dosyası) Sunucu gerektirmeden, dosya tabanlı ilişkisel veri saklama; karakter bazlı skor geçmişi tutmaya uygun
